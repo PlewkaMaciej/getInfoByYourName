@@ -1,6 +1,6 @@
 import { Button } from 'react-bootstrap';
 
-function GetInfo({yourName,setYourGender,setYourAge,setYourCountry,setNameOfSearch}){
+function GetInfo({yourName,setYourGender,setYourAge,setYourCountry,setNameOfSearch,nameRef}){
     const getData =()=>{
         setNameOfSearch(yourName)
         fetch('https://api.nationalize.io?name='+yourName)
@@ -15,6 +15,7 @@ function GetInfo({yourName,setYourGender,setYourAge,setYourCountry,setNameOfSear
         .then(response => response.json())
         .then(response => setYourAge(response.age))
         .catch(err => console.error(err));
+        nameRef.current.value=""
     }
     return(
         <Button className="button-to-get-data" onClick={getData} variant="primary">Get information about your name!</Button>

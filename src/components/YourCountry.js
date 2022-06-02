@@ -1,14 +1,9 @@
-import { useEffect } from "react";
 
+import world from "../photos/world.png"
 function YourCountry({yourCountry}){
-    useEffect(()=>{
-        yourCountry.map((value)=>{
-       return console.log(value.country_id )
-        })
-    })
     return(<>
-        {yourCountry.map((value)=>{
-            return <p>Your country id: {value.country_id} probabilty: {value.probability}</p>
+        {yourCountry.map((value,index)=>{
+            return  <> <div key={index} className="country-and-world-photo-container"> <p >Your country id: {value.country_id} probabilty: {value.probability}</p> <img className="world-photo" src={world}></img></div></>
         })}
         </>
         

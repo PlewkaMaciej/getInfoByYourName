@@ -11,7 +11,7 @@ function GuessInfo() {
     const nameRef = useRef()
     const [yourGender, setYourGender] = useState();
     const [yourAge, setYourAge] = useState();
-    const [yourCountry, setYourCountry] = useState();
+    const [yourCountry, setYourCountry] = useState([]);
     const [yourName, setYourName] = useState();
     const [yourNameOfSearch, setNameOfSearch] = useState();
     useEffect(()=>{
@@ -29,7 +29,7 @@ function GuessInfo() {
             </div>
             <div className='input-user-information-container'>
                 <InputUserName setYourName={setYourName} nameRef={nameRef}/>
-                <GetInfo yourName={yourName} yourAge={yourAge} yourGender={yourGender} setYourGender={setYourGender} setYourAge={setYourAge} setYourCountry={setYourCountry} setNameOfSearch={setNameOfSearch} />
+                <GetInfo nameRef={nameRef} yourName={yourName} yourAge={yourAge} yourGender={yourGender} setYourGender={setYourGender} setYourAge={setYourAge} setYourCountry={setYourCountry} setNameOfSearch={setNameOfSearch} />
                 <YourName yourName={yourNameOfSearch} />
                 <YourGender yourGender={yourGender}/>
                 <YourAge yourAge={yourAge}/>

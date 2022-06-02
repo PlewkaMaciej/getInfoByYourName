@@ -31,3 +31,37 @@
 .name-paragraph{
     margin-top: 30px;
 }
+.gender-photo{
+    width: 60px;
+    height: 60px;
+}
+.gender-and-photo-container{
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.age-and-photo-container{
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.how-old-photo{
+  width: 400px;
+  height: 300px;
+}
+.country-and-world-photo-container{
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.world-photo{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}
