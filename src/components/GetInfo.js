@@ -1,16 +1,16 @@
 import { Button } from 'react-bootstrap';
 
-function GetInfo(){
+function GetInfo({yourName}){
     const getData =()=>{
-        fetch('https://api.nationalize.io?name=nathaniel')
+        fetch('https://api.nationalize.io?name='+yourName)
         .then(response => response.json())
         .then(response => console.log(response.country))
         .catch(err => console.error(err));
-        fetch('https://api.genderize.io?name=luc')
+        fetch('https://api.genderize.io?name='+yourName)
         .then(response => response.json())
         .then(response => console.log(response.gender))
         .catch(err => console.error(err));
-        fetch('https://api.agify.io?name=meelad')
+        fetch('https://api.agify.io?name='+yourName)
         .then(response => response.json())
         .then(response => console.log(response.age))
         .catch(err => console.error(err));
