@@ -1,6 +1,6 @@
-function YourGender(){
+function YourGender({yourGender}){
     return(
-        <p>Your gender:</p>
+        <p>Your gender: {yourGender}</p>
     )
 }
 export default YourGender;

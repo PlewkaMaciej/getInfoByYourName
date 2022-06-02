@@ -6,13 +6,22 @@ import YourName from './YourName';
 import YourGender from './YourGender';
 import YourAge from './YourAge';
 import YourCountry from './YourCountry';
-import React, {  useRef,useState } from 'react';
+import React, {  useEffect, useRef,useState } from 'react';
 function GuessInfo() {
     const nameRef = useRef()
     const [yourGender, setYourGender] = useState();
     const [yourAge, setYourAge] = useState();
     const [yourCountry, setYourCountry] = useState();
     const [yourName, setYourName] = useState();
+    const [yourNameOfSearch, setNameOfSearch] = useState();
+    useEffect(()=>{
+        if(yourAge===null){
+            setYourAge("Our magical website have no idea about your age")
+        }
+        if(yourGender===null){
+        setYourGender("Our magical website have no idea about your age")
+        }
+},[yourAge])
     return (
         <div>
             <div className='heading-container'>
@@ -20,8 +29,8 @@ function GuessInfo() {
             </div>
             <div className='input-user-information-container'>
                 <InputUserName setYourName={setYourName} nameRef={nameRef}/>
-                <GetInfo yourName={yourName} setYourGender={setYourGender} setYourAge={setYourAge} setYourCountry={setYourCountry} />
-                <YourName yourName={yourName} />
+                <GetInfo yourName={yourName} yourAge={yourAge} yourGender={yourGender} setYourGender={setYourGender} setYourAge={setYourAge} setYourCountry={setYourCountry} setNameOfSearch={setNameOfSearch} />
+                <YourName yourName={yourNameOfSearch} />
                 <YourGender yourGender={yourGender}/>
                 <YourAge yourAge={yourAge}/>
                 <YourCountry yourCountry={yourCountry}/>

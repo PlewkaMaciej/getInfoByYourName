@@ -1,6 +1,6 @@
-function YourAge(){
+function YourAge({yourAge}){
     return(
-        <p>Your age:</p>
+        <p>Your age: {yourAge}</p>
     )
 }
 export default YourAge;
