@@ -3,6 +3,9 @@ import GetInfo from './GetInfo';
 import "../styles/guesInfo.css"
 import InputUserName from './InputUserName';
 import YourName from './YourName';
+import YourGender from './YourGender';
+import YourAge from './YourAge';
+import YourCountry from './YourCountry';
 function GuessInfo() {
     return (
         <div>
@@ -13,6 +16,9 @@ function GuessInfo() {
                 <InputUserName/>
                 <GetInfo />
                 <YourName />
+                <YourGender />
+                <YourAge />
+                <YourCountry />
             </div>
             
         </div>
