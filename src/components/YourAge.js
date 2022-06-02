@@ -5,6 +5,9 @@ import oldUser from "../photos/oldUser.jpg"
 function YourAge({yourAge}){
     return(
         <>
+        {yourAge==="Our magical website have no idea about your age"&&
+           <p>Your age: Our magical website have no idea about your age</p>
+        }
         {yourAge <10 &&
         <>
         <div className="age-and-photo-container">
