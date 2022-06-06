@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/getInfoByYourName/static/css/main.9b8c59a2.css",
+    "main.js": "/getInfoByYourName/static/js/main.a4d29c91.js",
+    "static/media/world.png": "/getInfoByYourName/static/media/world.09f9e4f1abeab1199393.png",
+    "static/media/middleAge.PNG": "/getInfoByYourName/static/media/middleAge.33c7be036536896f09c8.PNG",
+    "static/media/adult.PNG": "/getInfoByYourName/static/media/adult.6fe0492662a5bfcf1d3b.PNG",
+    "static/media/baby.jpg": "/getInfoByYourName/static/media/baby.6561f720b2f9fca64e60.jpg",
+    "static/media/oldUser.jpg": "/getInfoByYourName/static/media/oldUser.73e0997edfb76c214667.jpg",
+    "static/media/female.jpg": "/getInfoByYourName/static/media/female.df1e5f5f08c182738974.jpg",
+    "static/media/male.jpg": "/getInfoByYourName/static/media/male.078be350c74465642afb.jpg",
+    "index.html": "/getInfoByYourName/index.html",
+    "main.9b8c59a2.css.map": "/getInfoByYourName/static/css/main.9b8c59a2.css.map",
+    "main.a4d29c91.js.map": "/getInfoByYourName/static/js/main.a4d29c91.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b8c59a2.css",
+    "static/js/main.a4d29c91.js"
+  ]
+}
